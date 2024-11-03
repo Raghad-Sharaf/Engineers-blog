@@ -1,0 +1,284 @@
+/* Navbar */
+.navbar {
+    background-color: var(--secondary-color);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+
+
+.logo {
+    color: var(--main-color);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    flex-grow: 1;
+    justify-content: end;
+    text-transform: capitalize;
+}
+
+
+.list-item {
+    transition: all 0.3s;
+}
+
+
+.list-item:hover {
+    color: var(--main-color);
+}
+
+
+input[type="search"] {
+    padding: 0.5rem;
+    border: none;
+}
+
+
+.search-btn {
+    padding: 0.4rem;
+    transition: all 0.3s;
+}
+
+
+.search-btn:hover {
+    color: var(--secondary-color);
+    background-color: var(--third-color);
+}
+
+
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Header */
+header {
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)) ,url(../img/civil-engineering-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header p {
+    text-align: center;
+    width: 60%;
+    color: var(--third-color);
+}
+
+
+/* Blog posts */
+.blog-posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+
+.post-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 1.5rem;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+}
+
+
+.post-info {
+    margin-bottom: 0.5rem;
+}
+
+
+.date {
+    color: var(--main-color);
+    font-size: 0.85rem;
+}
+
+
+.post-card img {
+    width: 100%;
+}
+
+
+figcaption {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #5b5f62;
+}
+
+
+article p {
+    margin-bottom: 1rem;
+}
+
+
+.learn-more {
+    background-color: var(--main-color);
+    padding: 0.75rem;
+    text-transform: capitalize;
+    width: fit-content;
+    transition: all 0.3s;
+}
+
+
+.learn-more:hover {
+    background-color: var(--secondary-color);
+}
+
+
+/* Older posts */
+.older-posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.older-posts ul {
+    flex-direction: column;
+}
+
+
+.older-posts ul li {
+    background-color: var(--main-color);
+    border-radius: 5px;
+    padding: 1.5rem;
+    width: 100%;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+
+.older-posts ul li:hover {
+    background-color: var(--secondary-color);
+}
+
+
+/* Footer */
+.footer {
+    background-color: var(--secondary-color);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+
+.footer p {
+    text-transform: capitalize;
+    color: var(--third-color);
+    text-decoration: none;
+    font: normal normal 1rem "Nanum Gothic", sans-serif;
+}
+
+
+.footer .logo {
+    font-size: 1rem;
+}
+
+
+.footer .designed-by {
+    margin-top: 0.40rem;
+}
+
+
+.design-system-link {
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    transition: all 0.3s;
+}
+
+
+.design-system-link:hover {
+    color: var(--third-color);
+}
+
+
+/* Media query */
+@media screen and (max-width: 576px) {
+    .nav-list {
+        justify-content: center;
+    }
+
+
+    input[type="search"] {
+        padding: 0.3rem;
+    }
+    
+    
+    .search-btn {
+        padding: 0.3rem;
+    }
+
+
+    header {
+        background-position: top;
+    }
+
+
+    header p {
+        width: 80%;
+    }
+
+
+    .blog-posts {
+        grid-template-columns: 1fr;
+        margin-top: 2.50rem;
+    }
+
+
+    .post-card {
+        padding: 1.30rem;
+    }
+
+
+    .older-posts ul li {
+        padding: 1rem;
+    }
+}
+
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .nav-list {
+        justify-content: flex-start;
+    }
+
+
+    header {
+        height: 80vh;
+    }
+
+
+    header p {
+        width: 80%;
+    }
+
+
+    .older-posts ul li {
+        padding: 1.25rem;
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 922px) {
+    header {
+        height: 70vh;
+    }
+}
+
+

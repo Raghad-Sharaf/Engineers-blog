@@ -1,0 +1,127 @@
+/* Font family */
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+
+/* Public styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --main-color: #008cf9;
+    --secondary-color: #222;
+    --third-color: #f8f7fa;
+    font-size: 16px;
+}
+
+
+body {
+    background-color: var(--third-color);
+    font-family: "Nanum Gothic", sans-serif;
+    color: var(--secondary-color);
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--third-color);
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+
+button {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    text-transform: capitalize;
+    font: 1rem "Nanum Gothic", sans-serif;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+
+.sections-divider {
+    border-top: 2px solid #ddd;
+    margin: 3rem 0;
+}
+
+
+/* Media query */
+@media screen and (max-width: 576px) {
+    :root {
+        font-size: 13.50px;
+    }
+
+
+    .container {
+        width: 85%;
+    }
+
+
+    .row {
+        flex-direction: column;
+        align-content: center;
+    }
+
+
+    .sections-divider {
+        margin: 2rem 0;
+    }
+}
+
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    :root {
+        font-size: 14px;
+    }
+
+
+    .container {
+        width: 85%;
+    }
+
+
+    .sections-divider {
+        margin: 2rem 0;
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 922px) {
+    .container {
+        width: 85%;
+    }
+
+
+    .sections-divider {
+        margin: 2.5rem 0;
+    }
+}

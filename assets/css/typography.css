@@ -1,0 +1,47 @@
+/* Typography styles */
+h1 {
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    color: var(--main-color);
+    text-align: center;
+    line-height: 1.8;
+}
+
+
+h2 {
+    text-transform: capitalize;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+
+h3 {
+    text-transform: capitalize;
+    font-size: 1.25rem;
+    margin: 2rem 0;
+}
+
+
+p {
+    line-height: 1.5;
+    font: italic bold 1rem "Nanum Gothic", sans-serif;
+    text-decoration: underline;
+}
+
+
+/* Media query */
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+
+    h2 {
+        font-size: 1.50rem;
+    }
+
+
+    h3 {
+        margin: 1.25rem 0;
+    }
+}
